@@ -2,7 +2,6 @@ package com.f1soft.admin.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import sun.security.util.Password;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -12,14 +11,23 @@ import java.io.Serializable;
 @Table(name = "admin_info")
 @Getter
 @Setter
-public class Admin implements Serializable {
+public class Admin implements Serializable{
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "name",nullable = false)
+    private String name;
+
+    @Column(name = "email",nullable = false)
+    private String email;
+
+    @NotNull
     @Column(name = "user_id",nullable = false)
     private String userId;
 
+    @NotNull
     @Column(name = "password" ,nullable = false)
-    private Password password;
+    private String password;
 }

@@ -1,0 +1,10 @@
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/dto/AdminDto.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/service/AdminService.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/repository/AdminRepository.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/configuration/JpaConfiguration.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/configuration/ApplicationConfiguration.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/configuration/ApplicationInitializer.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/configuration/RootConfig.java
+/media/sabu/New Volume/instagram/Instagram/Admin/src/main/java/com/f1soft/admin/model/Admin.java

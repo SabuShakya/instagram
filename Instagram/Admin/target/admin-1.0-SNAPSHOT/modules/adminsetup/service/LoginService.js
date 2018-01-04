@@ -7,8 +7,8 @@
         var vm = this;
         vm.verifyAdmin = verifyAdmin;
 
-        function verifyAdmin(url) {
-            HttpService.get(url).then(function (response) {
+        function verifyAdmin(url,userId) {
+            HttpService.get(url,userId).then(function (response) {
                     console.log("response" + response);
                     if (response == true) {
                         return true;

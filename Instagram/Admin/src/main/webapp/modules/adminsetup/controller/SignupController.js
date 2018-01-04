@@ -1,7 +1,7 @@
 (function () {
     angular.module("adminModule").controller("SignupController",SignupController);
 
-    SignupController.$inject = ['Signupservice'];
+    SignupController.$inject = ['SignupService'];
     function SignupController() {
         var vm = this;
         vm.name = '';

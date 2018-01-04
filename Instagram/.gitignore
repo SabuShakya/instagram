@@ -1,0 +1,7 @@
+akash [3:18 PM]
+target/
+.idea/
+.svn/
+*.iml
+/node_modules
+*.properties

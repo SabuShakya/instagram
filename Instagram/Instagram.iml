@@ -11,8 +11,6 @@
         </webroots>
       </configuration>
     </facet>
-<<<<<<< HEAD
-=======
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
@@ -20,7 +18,6 @@
         </fileset>
       </configuration>
     </facet>
->>>>>>> feature1
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />

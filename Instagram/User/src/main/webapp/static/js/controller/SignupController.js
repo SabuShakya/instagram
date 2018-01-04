@@ -4,7 +4,7 @@
     SignupController.$inject =['$scope','UserService'];
     function SignupController($scope, UserService){
         var vm=this;
-        vm.user ={id:'null',firstName:'', lastName:'', uname:'', email:'',password:''};
+        vm.user ={id:'',firstName:'', lastName:'', uname:'', email:'',password:''};
         vm.users =[];
         vm.submit= submit;
 

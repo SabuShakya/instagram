@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d08affbc-bbad-4e71-ad79-c317f19e8ddc" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="" afterPath="$PROJECT_DIR$/User/src/main/webapp/static/js/controller/LoginController.js" />
       <change beforePath="" afterPath="$PROJECT_DIR$/User/src/main/webapp/static/js/service/LoginService.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -50,6 +51,9 @@
       <change beforePath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/adminsetup/service/LoginService.js" afterPath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/adminsetup/service/LoginService.js" />
       <change beforePath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/views/signupPage.jsp" afterPath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/views/signupPage.jsp" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,8 +123,18 @@
       <file leaf-file-name="LoginController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="156">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,6 +162,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="LoginController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/src/main/webapp/static/js/controller/LoginController.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,6 +170,9 @@
               <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
 =======
       <file leaf-file-name="loginPage.jsp" pinned="false" current-in-tab="true">
+=======
+      <file leaf-file-name="loginPage.jsp" pinned="false" current-in-tab="false">
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
         <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/loginPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -239,7 +257,6 @@
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminService.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp" />
         <option value="$PROJECT_DIR$/Instagram.iml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/SignupService.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/app-module.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" />
@@ -263,7 +280,11 @@
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/loginPage.jsp" />
+<<<<<<< HEAD
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
       </list>
     </option>
   </component>
@@ -803,17 +824,25 @@
 =======
       <workItem from="1515038107801" duration="13178000" />
       <workItem from="1515057005044" duration="3511000" />
+<<<<<<< HEAD
       <workItem from="1515061214561" duration="4414000" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+      <workItem from="1515061214561" duration="4727000" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="70491000" />
 =======
     <option name="totallyTimeSpent" value="70355000" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+    <option name="totallyTimeSpent" value="70668000" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="16" width="1315" height="744" extended-state="6" />
@@ -850,9 +879,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44496125" sideWeight="0.4972635" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27912432" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912432" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2658327" sideWeight="0.5096419" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1169,6 +1203,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/.gitignore" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1180,6 +1215,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
     <entry file="file://$PROJECT_DIR$/Instagram.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1381,15 +1418,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js">
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/loginPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="10" />
->>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+        <state relative-caret-position="288">
+          <caret line="25" column="102" lean-forward="false" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="318">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="10" />
+>>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+        <state relative-caret-position="156">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/User/src/main/java/com/users/configuration/AppConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1401,6 +1452,12 @@
         <state relative-caret-position="288">
           <caret line="25" column="102" lean-forward="false" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+=======
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
           <folding />
         </state>
       </provider>

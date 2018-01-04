@@ -4,9 +4,10 @@ angular.module('userModule').factory('HttpService', HttpService)
     HttpService.$inject =['$http', '$q'];
     function HttpService($http, $q) {
 
-        var REST_SERVICE_URI= "http://localhost:8080";
+        var vm= this;
+        vm. REST_SERVICE_URI= "http://localhost:8080";
 
-        var factory={
+        vm.factory={
             get: get,
             post: post
         };
@@ -14,22 +15,22 @@ angular.module('userModule').factory('HttpService', HttpService)
 
         function get(url) {
             var defered = $q.defer();
-            $http.get(REST_SERVICE_URI+url)
+            $http.get(vm.REST_SERVICE_URI+url)
                 .then(
                     function (response) {
                         defered.resolve(response.data);
                     },
                     function (error) {
                         console.log("Error occured");
-                        defered.reject(error);
+                        defered.reject(error.data);
                     }
                 );
             return defered.promise;
         }
 
-        function post(url,user) {
+        function post(url,newUser) {
             var defered = $q.defer();
-            $http.post(REST_SERVICE_URI+url,user)
+            $http.post(vm.REST_SERVICE_URI+url,newUser)
                 .then(
                     function (response) {
                         defered.resolve(response.data);

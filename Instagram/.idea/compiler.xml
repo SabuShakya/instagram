@@ -8,10 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Admin" />
-<<<<<<< HEAD
-=======
-        <module name="User" />
->>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
+
+          <module name="User" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

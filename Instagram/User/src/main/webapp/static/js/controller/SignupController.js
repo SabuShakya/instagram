@@ -1,49 +1,56 @@
-
 (function(){
-    angular.module('myApp').controller('SignupController',SignupController);
-    SignupController.$inject =['$scope','UserService'];
-    function SignupController($scope, UserService){
+    angular.module('userModule').controller('SignupController',SignupController);
+    SignupController.$inject =['SignupService'];
+    function SignupController(SignupService){
         var vm=this;
-        vm.user ={id:'null',firstName:'', lastName:'', uname:'', email:'',password:''};
-        vm.users =[];
-        vm.submit= submit;
+            vm.id='null';
+            vm.firstName='';
+            vm.lastName='';
+            vm.uname='';
+            vm.email='';
+            vm.password='';
 
-        fetchAllUsers();
-
-        function fetchAllUsers(){
-            UserService.fetchAllUsers()
-                .then(
-                    function(d) {
-                        vm.users = d;
-                    },
-                    function(errResponse){
-                        console.error('Error while fetching Users');
-                    }
-                );
+        vm.url="/signup";
+        vm.createUser = function createUser() {
+            SignupService.createUser(vm.url);
+            // .then(
+            //     function (value) {
+            //
+            //     }
+            // )
         }
 
-        function createUser(user){
-            UserService.createUser(user)
-                .then(
-                    fetchAllUsers,
-                    function(errResponse){
-                        console.error('Error while creating User');
-                    }
-                );
-        }
-
-        function submit() {
-            if(vm.user.id===null){
-                console.log('Saving New User', vm.user);
-                createUser(vm.user);
-            }
-            reset();
-        }
-
-        function reset(){
-            vm.user={id:null,firstName:'',lastName:'',uname:'',email:'',password:''};
-            $scope.signupform.$setPristine();
-        }
+        // fetchAllUsers();
+        //
+        // function fetchAllUsers(){
+        //     UserService.fetchAllUsers()
+        //         .then(
+        //             function(d) {
+        //                 vm.users = d;
+        //             },
+        //             function(errResponse){
+        //                 console.error('Error while fetching Users');
+        //             }
+        //         );
+        // }
+        //
+        // function createUser(user){
+        //     UserService.createUser(user)
+        //         .then(
+        //             fetchAllUsers,
+        //             function(errResponse){
+        //                 console.error('Error while creating User');
+        //             }
+        //         );
+        // }
+        //
+        // function submit() {
+        //     if(vm.user.id===null){
+        //         console.log('Saving New User', vm.user);
+        //         createUser(vm.user);
+        //     }
+        //     console.log("saved");
+        // }
     }
 })();
 

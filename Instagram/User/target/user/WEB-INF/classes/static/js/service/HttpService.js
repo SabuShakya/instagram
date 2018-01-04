@@ -1,20 +1,20 @@
 (function () {
 
-angular.module('myApp').factory('UserService', UserService)
-    UserService.$inject =['$http', '$q'];
-    function UserService($http, $q) {
+angular.module('userModule').factory('HttpService', HttpService)
+    HttpService.$inject =['$http', '$q'];
+    function HttpService($http, $q) {
 
-        var REST_SERVICE_URI= "http://localhost:8080/";
+        var REST_SERVICE_URI= "http://localhost:8080/#";
 
         var factory={
-            fetchAllUsers: fetchAllUsers,
-            createUser: createUser
+            get: get,
+            post: post
         };
         return factory;
 
-        function fetchAllUsers() {
+        function get(url) {
             var defered = $q.defer();
-            $http.get(REST_SERVICE_URI)
+            $http.get(REST_SERVICE_URI+url)
                 .then(
                     function (response) {
                         defered.resolve(response.data);
@@ -27,9 +27,9 @@ angular.module('myApp').factory('UserService', UserService)
             return defered.promise;
         }
 
-        function createUser(user) {
+        function post(url) {
             var defered = $q.defer();
-            $http.post(REST_SERVICE_URI,user)
+            $http.post(REST_SERVICE_URI+url)
                 .then(
                     function (response) {
                         defered.resolve(response.data);

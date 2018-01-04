@@ -1,20 +1,19 @@
-'use strict';
-
 (function(){
-angular.module('myApp',['ngRoute']);
+angular.module('userModule',['ngRoute']);
 
-angular.module('myApp').config(function($routeProvider) {
+angular.module('userModule').config(function($routeProvider) {
     $routeProvider
         .when("/login",{
-            templateUrl:"/WEB-INF/views/login.jsp",
+            templateUrl:"static/views/login.jsp",
             controller: "LoginController"
         })
         .when("/signup",{
-            templateUrl:"static/views/signup.jsp",
-            controller:"SignupController"
+            templateUrl:"/static/views/signup.jsp",
+            controller:"SignupController as form"
         })
         .otherwise({
-            redirectTo:'/'});
+            redirectTo:'/'
+        });
 
 })
 })();

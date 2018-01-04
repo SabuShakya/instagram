@@ -5,8 +5,8 @@ function SignupService($http, HttpService) {
     var vm = this;
     vm.createUser = createUser;
 
-    function createUser(url) {
-        HttpService.post(url)
+    function createUser(url,data) {
+        HttpService.post(url, data)
             .then(
                 function (response) {
                     // location.pathname("/login");

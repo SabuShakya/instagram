@@ -4,7 +4,7 @@ angular.module('userModule').factory('HttpService', HttpService)
     HttpService.$inject =['$http', '$q'];
     function HttpService($http, $q) {
 
-        var REST_SERVICE_URI= "http://localhost:8080/#";
+        var REST_SERVICE_URI= "http://localhost:8080";
 
         var factory={
             get: get,
@@ -27,9 +27,9 @@ angular.module('userModule').factory('HttpService', HttpService)
             return defered.promise;
         }
 
-        function post(url) {
+        function post(url,user) {
             var defered = $q.defer();
-            $http.post(REST_SERVICE_URI+url)
+            $http.post(REST_SERVICE_URI+url,user)
                 .then(
                     function (response) {
                         defered.resolve(response.data);

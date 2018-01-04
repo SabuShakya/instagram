@@ -133,8 +133,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -825,15 +825,20 @@
       <workItem from="1515038107801" duration="13178000" />
       <workItem from="1515057005044" duration="3511000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1515061214561" duration="4414000" />
 >>>>>>> ccd864bdf133c141c5f3f506d321c682dbdbea6e
 =======
       <workItem from="1515061214561" duration="4727000" />
 >>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
+=======
+      <workItem from="1515061214561" duration="4892000" />
+>>>>>>> 31a4544869938490090b65096909065c1c2d9c81
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="70491000" />
@@ -843,6 +848,9 @@
 =======
     <option name="totallyTimeSpent" value="70668000" />
 >>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
+=======
+    <option name="totallyTimeSpent" value="70833000" />
+>>>>>>> 31a4544869938490090b65096909065c1c2d9c81
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="16" width="1315" height="744" extended-state="6" />
@@ -1455,9 +1463,14 @@
 =======
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> 26f49d2714c11d320f72a1b45cab1bcbcb13de91
+=======
+        <state relative-caret-position="72">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+>>>>>>> 31a4544869938490090b65096909065c1c2d9c81
           <folding />
         </state>
       </provider>

@@ -1,8 +1,8 @@
 (function () {
     angular.module("adminModule").controller("SignupController",SignupController);
 
-    SignupController.$inject = ['Signupservice'];
-    function SignupController() {
+    SignupController.$inject = ['SignupService','$scope'];
+    function SignupController(SignupService,$scope) {
         var vm = this;
         vm.name = '';
         vm.userId = '';
@@ -15,17 +15,17 @@
         if (!(vm.password == vm.repassword)){
             vm.match = true;
         }
-        vm.newAdmin = {
-            name: vm.name,
-            userId:vm.userId,
-            email:vm.email,
-            password:vm.password
-        };
         vm.saveAdmin = saveAdmin;
         vm.url = "/signup";
         function saveAdmin() {
-            vm.response = SignupService.saveAdmin(vm.url);
-            console.log(vm.response);
+            vm.newAdminObj={
+                'name':vm.name,
+                'userId':vm.userId,
+                'email':vm.email,
+                'password':vm.password
+            };
+            vm.response = SignupService.saveAdmin(vm.url,vm.newAdminObj);
+            console.log("response"+vm.response);
             if(!(vm.response==true|| vm.response == false)){
                 vm.show_error_msg = true;
             }

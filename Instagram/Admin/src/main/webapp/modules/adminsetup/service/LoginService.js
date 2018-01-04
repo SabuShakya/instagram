@@ -9,7 +9,7 @@
 
         function verifyAdmin(url) {
             HttpService.get(url).then(function (response) {
-                    console.log("response" + value);
+                    console.log("response" + response);
                     if (response == true) {
                         return true;
                     } else {

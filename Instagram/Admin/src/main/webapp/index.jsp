@@ -12,10 +12,12 @@
     <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>--%>
     <script type="text/javascript" src="static/angular.min.js"></script>
     <script type="text/javascript" src="static/angular-route.min.js"></script>
-    <script type="text/javascript" src="modules/adminsetup/app-module.js"></script>
+    <script type="text/javascript" src="app-module.js"></script>
     <script type="text/javascript" src="modules/adminsetup/controller/MainController.js"></script>
     <script type="text/javascript" src="modules/adminsetup/controller/LoginController.js"></script>
-    <%--<script src="modules/hello.js"></script>--%>
+    <script type="text/javascript" src="modules/adminsetup/service/LoginService.js"></script>
+    <script type="text/javascript" src="modules/adminsetup/service/HttpService.js"></script>
+
 
 </head>
 <body>

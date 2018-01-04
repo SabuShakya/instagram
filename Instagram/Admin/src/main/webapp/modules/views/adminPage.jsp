@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Admin</h1>
-<button value="Add New Admin"><a href="/addAdmin"></a></button>
-<button value="View Log"><a href="/viewLog"></a></button>
+<button value="Add New Admin"><a href="/addAdmin">Add New Admin</a></button>
+<button value="View Log"><a href="/viewLog">View Log</a></button>
 </body>
 </html>

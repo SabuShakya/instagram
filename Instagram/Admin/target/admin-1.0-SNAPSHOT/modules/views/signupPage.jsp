@@ -1,5 +1,5 @@
 <h2 class="text-center">Sign Up</h2>
-<form name="myForm" class="form-horizontal" novalidate>
+<form name="myForm" class="form-horizontal" ng-submit="signup.saveAdmin()" novalidate>
     <div class="form-group">
         <label class="control-label col-sm-2" for="name">Name:</label>
         <div class="col-sm-10">
@@ -12,7 +12,7 @@
     <div class="form-group">
         <label class="control-label col-sm-2" for="userId">UserId:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" ng-model="signup.name" id="userId" placeholder="Enter name" name="name" required/><br>
+            <input type="text" class="form-control" ng-model="signup.userId" id="userId" placeholder="Enter name" name="name" required/><br>
             <span style="color:red" ng-show="myForm.userId.$dirty && myForm.userId.$invalid">
         <span ng-show="myForm.userId.$error.required">UserId is required.</span>
         </span>
@@ -39,14 +39,16 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-sm-2"  ng-model="signup.password" for="pwd">Re-Password:</label>
+        <label class="control-label col-sm-2"  ng-model="signup.repassword" for="re-pwd">Re-Password:</label>
         <div class="col-sm-10">
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password again" name="re-pwd" required/>
+            <input type="password" class="form-control" id="re-pwd" placeholder="Enter password again" name="re-pwd" required/>
+            <span ng-show="signup.match">Password donot match</span>
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button class="btn btn-default" ng-click="signup.saveUser()">SignUp</button>
+            <button class="btn btn-default" ng-click="signup.saveAdmin()">SignUp</button>
         </div>
     </div>
 </form>
+<span ng-show="signup.show_error_msg">Error Occurred try again</span>

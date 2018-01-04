@@ -1,7 +1,7 @@
 
 <form name="myForm" class="form-horizontal" ng-submit="login.loginUser()" novalidate>
     <div class="form-group">
-        <label class="control-label col-sm-2" for="userId">Email:</label>
+        <label class="control-label col-sm-2" for="userId">UserId:</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" ng-model="login.userId" id="userId"
                    placeholder="Enter user id" name="userId" required/><br>

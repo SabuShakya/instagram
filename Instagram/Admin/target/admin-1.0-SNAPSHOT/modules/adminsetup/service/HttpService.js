@@ -10,9 +10,9 @@
             get:get,
             post:post
         }
-        function get(url) {
+        function get(url,userId) {
             var defered = $q.defer();
-            $http.get(vm.Rest_Service_Url+url).then(function (value) {
+            $http.get(vm.Rest_Service_Url+url+userId).then(function (value) {
                 defered.resolve(value.data);
             },function (reason) {
                 defered.reject(reason.data);

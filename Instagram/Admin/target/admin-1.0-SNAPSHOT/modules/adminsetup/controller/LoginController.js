@@ -9,7 +9,7 @@
         vm.password = '';
         vm.errormsg = '';
         vm.valid = true;
-        vm.url = "/login/" + vm.userId;
+        vm.url = "/login/";
 
         vm.loginUser = loginUser;
         vm.signup = signup;
@@ -19,7 +19,7 @@
         };
 
         function loginUser () {
-            vm.booleanValue =LoginService.verifyAdmin(vm.url);
+            vm.booleanValue =LoginService.verifyAdmin(vm.url,vm.userId);
                     if (booleanValue = true){
                         $location.path("/viewExistingAdmin");
                     }else {

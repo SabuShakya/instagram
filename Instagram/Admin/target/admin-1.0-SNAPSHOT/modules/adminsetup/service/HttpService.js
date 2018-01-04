@@ -19,7 +19,7 @@
             })
             return defered.promise;
         };
-        function post(url) {
+        function post(url,newAdmin) {
             var  defered = $q.defer();
             $http.post(vm.Rest_Service_Url+url).then(function (value) {
                 defered.resolve(value)

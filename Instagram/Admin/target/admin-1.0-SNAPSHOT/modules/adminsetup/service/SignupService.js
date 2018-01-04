@@ -7,8 +7,8 @@
         var vm = this;
         vm.saveAdmin = saveAdmin;
 
-        function saveAdmin(url) {
-            HttpService.post(url).then(function (value) {
+        function saveAdmin(url,newAdmin) {
+            HttpService.post(url,newAdmin).then(function (value) {
                 if(value == true){
                     $location.path("/login");
                 }else{

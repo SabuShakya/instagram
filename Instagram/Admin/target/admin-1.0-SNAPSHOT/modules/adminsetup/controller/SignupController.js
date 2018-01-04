@@ -24,7 +24,7 @@
         vm.saveAdmin = saveAdmin;
         vm.url = "/signup";
         function saveAdmin() {
-            vm.response = SignupService.saveAdmin(vm.url);
+            vm.response = SignupService.saveAdmin(vm.url,vm.newAdmin);
             console.log(vm.response);
             if(!(vm.response==true|| vm.response == false)){
                 vm.show_error_msg = true;

@@ -42,7 +42,7 @@
         <label class="control-label col-sm-2"  ng-model="signup.repassword" for="re-pwd">Re-Password:</label>
         <div class="col-sm-10">
             <input type="password" class="form-control" id="re-pwd" placeholder="Enter password again" name="re-pwd" required/>
-            <span ng-show="signup.match">Password donot match</span>
+            <span style="color:red" ng-show="signup.match">Password donot match</span>
         </div>
     </div>
     <div class="form-group">
@@ -51,4 +51,4 @@
         </div>
     </div>
 </form>
-<span ng-show="signup.show_error_msg">Error Occurred try again</span>
+<span style="color:red" ng-show="signup.show_error_msg">Error Occurred try again</span>

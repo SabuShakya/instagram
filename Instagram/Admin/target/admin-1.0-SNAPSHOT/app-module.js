@@ -1,7 +1,7 @@
 (function () {
     angular.module('adminModule',['ngRoute']);
     angular.module('adminModule').config(['$routeProvider',function ($routeProvider) {
-        $routeProvider.when("/",{
+        $routeProvider.when("/login",{
             controller:'LoginController as login',
             templateUrl:'/modules/views/loginPage.jsp'
             })
@@ -18,7 +18,7 @@
                 templateUrl:'/modules/views/adminPage.jsp'
             })
             .otherwise({
-                redirectTo:'/'
+                redirectTo:'/login'
             })
     }]);
 })();

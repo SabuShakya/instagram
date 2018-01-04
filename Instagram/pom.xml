@@ -25,7 +25,10 @@
 
   <name>instagram</name>
   <modules>
+
     <module>User</module>
+    <module>Admin</module>
+
   </modules>
   <groupId>com.f1soft</groupId>
   <artifactId>instagram</artifactId>

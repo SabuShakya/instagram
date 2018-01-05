@@ -17,6 +17,7 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @OneToMany(mappedBy = "pic_id")
     private int id;
 
     @Column(name="firstName", nullable = false)

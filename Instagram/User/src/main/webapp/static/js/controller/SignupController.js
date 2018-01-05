@@ -14,8 +14,9 @@
             };
 
         vm.url="/signup";
+        vm.createUser= createUser;
 
-        vm.createUser = function createUser() {
+        function createUser() {
             vm.newUser ={
                 'id': vm.id,
                 'firstName': vm.firstName,

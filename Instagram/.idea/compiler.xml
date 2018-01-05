@@ -8,13 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Admin" />
-
-          <module name="User" />
+        <module name="User" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Admin" target="1.5" />
       <module name="Instagram" target="1.5" />
+      <module name="User" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

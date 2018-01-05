@@ -15,6 +15,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private static List<User> users;
+
     @Resource
     private UserRepository userRepository;
 
@@ -28,7 +29,6 @@ public class UserServiceImpl implements UserService {
 //           return u;
 //       }
 //       return null;
-
         for(User user : users){
             if(user.getUname().equalsIgnoreCase(uname)){
                 return user;
@@ -46,6 +46,14 @@ public class UserServiceImpl implements UserService {
    public boolean userExist(User user){
         return findByuname(user.getFirstName())!=null;
    }
+
+    public boolean loginUser(String uname, User user) {
+        User u =userRepository.getByUname(uname);
+        if (u.getUname().equals(user.getUname())){
+            return true;
+        }
+        return  false;
+    }
 
 }
 

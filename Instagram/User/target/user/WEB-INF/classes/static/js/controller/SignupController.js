@@ -1,7 +1,7 @@
 (function(){
     angular.module('userModule').controller('SignupController',SignupController);
-    SignupController.$inject =['SignupService','$scope'];
-    function SignupController(SignupService,$scope){
+    SignupController.$inject =['SignupService'];
+    function SignupController(SignupService){
 
         var vm=this;
             vm.user ={
@@ -14,17 +14,18 @@
             };
 
         vm.url="/signup";
+        vm.createUser= createUser;
 
-        vm.createUser = function createUser() {
-            vm.data ={
-                id: vm.id,
-                firstName: vm.firstName,
-                lastName: vm.lastName,
-                uname: vm.uname,
-                email: vm.email,
-                password: vm.password
+        function createUser() {
+            vm.newUser ={
+                'id': vm.id,
+                'firstName': vm.firstName,
+                'lastName': vm.lastName,
+                'uname': vm.uname,
+                'email': vm.email,
+                'password': vm.password
             }
-            SignupService.createUser(vm.url,vm.data);
+            SignupService.createUser(vm.url,vm.newUser);
         }
     }
 })();

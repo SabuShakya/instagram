@@ -1,17 +1,17 @@
 (function () {
 
-angular.module('userModule').factory('HttpService', HttpService)
+angular.module('userModule').service('HttpService', HttpService)
     HttpService.$inject =['$http', '$q'];
     function HttpService($http, $q) {
 
         var vm= this;
         vm. REST_SERVICE_URI= "http://localhost:8080";
 
-        vm.factory={
+        return{
             get: get,
-            post: post
+            post: post,
+            postLogin:postLogin
         };
-        return factory;
 
         function get(url) {
             var defered = $q.defer();
@@ -42,5 +42,20 @@ angular.module('userModule').factory('HttpService', HttpService)
                 );
             return defered.promise;
         }
+
+        function postLogin() {
+            var defered = $q.defer();
+            $http.post(vm.REST_SERVICE_URI+url)
+                .then(
+                    function (response) {
+                        defered.resolve(response.data);
+                    },
+                    function (reason) {
+                        defered.reject(error());
+                    }
+                );
+            return defered.promise;
+        }
+
     }
 })()

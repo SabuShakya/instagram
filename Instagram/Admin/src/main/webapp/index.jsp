@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="css/login.css" rel="stylesheet">
-    <link href="css/bootsrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>--%>
     <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>--%>
     <script type="text/javascript" src="static/angular.min.js"></script>
@@ -34,7 +34,6 @@
 <script type="text/javascript" src="modules/adminsetup/service/LoginService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/SignupService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/HttpService.js"></script>
-<script type="text/javascript" src="modules/adminsetup/service/AdminPageService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/NewAdminService.js"></script>
 
 </html>

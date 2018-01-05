@@ -1,14 +1,12 @@
 <h1>DashBoard</h1>
  <button><a href="/#!/addAdmin">Add New Admin</a></button>
- <button ng-click="admin.showAdminList()">Manage Admins</button>
+ <button ng-show="admin.showList" ng-click="admin.showAdminList()">Manage Admins</button>
 
 <div ng-hide="admin.showList">
     <h1> All users </h1>
-
     <div class="alert alert-success" ng-if="saved">
         <strong>{{admin.message}}</strong>
     </div>
-
     <table class="table table-striped">
         <thead>
         <tr>
@@ -21,15 +19,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="a in admin.adminList">
+        <tr ng-repeat="ad in admin.adminList">
             <td>{{$index+1}}</td>
-            <td>{{a.name}}</td>
-            <td>{{a.userId}}</td>
-            <td>{{a.email}}</td>
+            <td>{{ad.name}}</td>
+            <td>{{ad.userId}}</td>
+            <td>{{ad.email}}</td>
             <td>
-                <button type="button" ng-click = "admin.edit(user)" class="btn btn-info"> Edit</button>
+                <button type="button" ng-click = "admin.editAdmin(ad)" class="btn btn-info"> Edit</button>
             </td>
-            <td><button type="button" ng-click = "admin.delete(user)" class="btn btn-danger"> Delete</button></td>
+            <td><button type="button" ng-click = "admin.deleteAdmin(ad)" class="btn btn-danger"> Delete</button></td>
         </tr>
         </tbody>
     </table>

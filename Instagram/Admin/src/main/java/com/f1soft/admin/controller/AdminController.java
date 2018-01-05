@@ -18,12 +18,13 @@ public class AdminController {
     private AdminService adminService;
 
     @GetMapping("/login/{userId}")
-    public ResponseEntity<Boolean> getAdmin(@RequestBody AdminDto adminDto, @PathVariable("userId")String userId){
-        boolean isAdmin=adminService.getAdmin(userId,adminDto);
-        if(isAdmin){
-            return new ResponseEntity(true,HttpStatus.OK);
+    public ResponseEntity<Admin> getAdmin(@PathVariable("userId")String userId){
+       Admin isAdmin=adminService.getAdmin(userId);
+        System.out.println(isAdmin);
+        if(isAdmin !=null){
+            return new ResponseEntity(isAdmin,HttpStatus.OK);
         }
-        return new ResponseEntity<Boolean>(false, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<Admin>(isAdmin, HttpStatus.NOT_FOUND);
     }
 
     @PostMapping("/signup")

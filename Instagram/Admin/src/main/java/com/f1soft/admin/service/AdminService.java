@@ -6,7 +6,7 @@ import com.f1soft.admin.model.Admin;
 import java.util.List;
 
 public interface AdminService {
-    public boolean getAdmin(String userId,AdminDto admin);
+    public Admin getAdmin(String userId);
     public void createAdmin(Admin admin);
     public Admin getAdminByUserId(String userId);
     public void updateAdmin(Admin admin);

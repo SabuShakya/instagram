@@ -17,12 +17,13 @@ public class AdminServiceImpl implements AdminService{
     @Resource
     private AdminRepository adminRepository;
 
-    public boolean getAdmin(String userId,AdminDto admin) {
-        Admin adminFromrepo=adminRepository.getAdminByUserId(userId);
-        if (adminFromrepo.getPassword().equals(admin.getPassword())){
-            return true;
+    public Admin getAdmin(String userId) {
+        Admin adminFromrepo= adminRepository.getAdminByUserId(userId);
+        System.out.println(adminFromrepo);
+        if (adminFromrepo !=null){
+                return adminFromrepo;
         }
-        return  false;
+        return  null;
     }
 
     public void createAdmin(Admin admin) {

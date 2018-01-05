@@ -17,10 +17,10 @@
                 controller:"AdminpageController as admin",
                 templateUrl:'/modules/views/adminPage.jsp'
             })
-            .when("/viewExistingAdmin",{
-                controller:"AdminpageController as manage",
-                templateUrl:'/modules/views/existingUsers.jsp'
-            })
+            // .when("/viewExistingAdmin",{
+            //     controller:"AdminpageController as manage",
+            //     templateUrl:'/modules/views/existingUsers.jsp'
+            // })
             .when("/addAdmin",{
                 controller:"NewAdminController as newadmin",
                 templateUrl:'/modules/views/addNewAdmin.jsp'

@@ -6,16 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" line="33" />
+    <bookmark url="file://$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" line="31" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d08affbc-bbad-4e71-ad79-c317f19e8ddc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/existingUsers.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/app-module.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/app-module.js" />
       <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/NewAdminController.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/NewAdminController.js" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/addNewAdmin.jsp" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/addNewAdmin.jsp" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js" />
       <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/signupPage.jsp" afterPath="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/signupPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/app-module.js" afterPath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/app-module.js" />
+      <change beforePath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/views/adminPage.jsp" afterPath="$PROJECT_DIR$/Admin/target/admin-1.0-SNAPSHOT/modules/views/adminPage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,68 +50,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="adminPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/app-module.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addNewAdmin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/addNewAdmin.jsp">
+      <file leaf-file-name="AdminpageController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="49" column="75" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAdminController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/NewAdminController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="108">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -112,28 +73,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="39" column="81" lean-forward="false" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAdminService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/LoginService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,14 +87,15 @@
       <list>
         <option value="Class" />
         <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>signup</find>
+      <find>manage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,21 +138,22 @@
         <option value="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminService.java" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/loginPage.jsp" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js" />
-        <option value="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/LoginService.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminPageController.js" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/app-module.js" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp" />
-        <option value="$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/signupPage.jsp" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/addNewAdmin.jsp" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/NewAdminController.js" />
         <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/existingUsers.jsp" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/app-module.js" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp" />
+        <option value="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js" />
+        <option value="$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js" />
+        <option value="$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js" />
       </list>
     </option>
   </component>
@@ -250,7 +193,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="51" />
     <option name="y" value="-4" />
     <option name="width" value="1301" />
@@ -452,18 +395,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///media/sabu/New Volume/instagram/Instagram/Admin/src/main/webapp/css/bootstrap.min.css" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Admin/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/views" />
-      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/Login" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/Admin/src/main/webapp/modules/images" />
       <recent name="$PROJECT_DIR$/Admin/src/main/webapp/static" />
       <recent name="$PROJECT_DIR$/Admin/src/main/webapp" />
       <recent name="$PROJECT_DIR$/Admin/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/Admin/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/views" />
+      <recent name="$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/Login" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -748,15 +694,15 @@
       <workItem from="1515057005044" duration="3511000" />
       <workItem from="1515061214561" duration="10368000" />
       <workItem from="1515114630424" duration="3876000" />
-      <workItem from="1515125214792" duration="10944000" />
+      <workItem from="1515125214792" duration="16643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91129000" />
+    <option name="totallyTimeSpent" value="96828000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="-4" width="1325" height="772" extended-state="6" />
+    <frame x="41" y="-4" width="1325" height="772" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44496125" sideWeight="0.5027365" order="12" side_tool="true" content_ui="tabs" />
@@ -768,7 +714,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38258165" sideWeight="0.4910086" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38258165" sideWeight="0.4910086" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27682737" sideWeight="0.49413604" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -779,9 +725,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912432" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912432" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2658327" sideWeight="0.5096419" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -789,7 +736,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -802,25 +748,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java</url>
           <line>26</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="79" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -829,22 +781,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/configuration/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/configuration/JpaConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/adminsetup/controller/MainController.js" />
     <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/WEB-INF/modules/adminsetup/app-module.js" />
     <entry file="file://$PROJECT_DIR$/Admin/src/main/resources/application.properties">
@@ -1046,98 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/SignupController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="1" column="82" lean-forward="true" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/SignupService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/LoginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/app-module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="39" column="81" lean-forward="false" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -1152,16 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/addNewAdmin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="49" column="75" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="430">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1174,12 +1014,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/SignupController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="1" column="82" lean-forward="true" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/LoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/LoginService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/SignupService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/NewAdminService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/app-module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/HttpService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/existingUsers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/views/adminPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="684">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
             <element signature="e#801#802#0" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
             <element signature="e#916#917#0" expanded="true" />
@@ -1189,10 +1118,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/java/com/f1soft/admin/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/service/AdminPageService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/main/webapp/modules/adminsetup/controller/AdminpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -46,9 +46,12 @@ public class AdminController {
         return new ResponseEntity<Boolean>(true,HttpStatus.OK);
     }
 
-    @GetMapping("/viewExistingAdmin")
+    @GetMapping("/getAllAdmins")
     public ResponseEntity<List<Admin>> viewLog(){
         List<Admin> adminList=adminService.getAllAdmins();
+        if(adminList != null){
         return new ResponseEntity<List<Admin>>(adminList,HttpStatus.OK);
+        }
+        return new ResponseEntity<List<Admin>>(adminList,HttpStatus.NOT_FOUND);
     }
 }

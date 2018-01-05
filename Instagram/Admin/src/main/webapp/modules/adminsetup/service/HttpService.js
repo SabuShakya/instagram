@@ -10,32 +10,32 @@
             get:get,
             post:post,
             postAdmin:postAdmin
-        }
-        function get(url,userId) {
+        };
+        function get(url) {
             var defered = $q.defer();
-            $http.get(vm.Rest_Service_Url+url+userId).then(function (value) {
+            $http.get(vm.Rest_Service_Url+url).then(function (value) {
                 defered.resolve(value.data);
             },function (reason) {
                 defered.reject(reason.data);
-            })
+            });
             return defered.promise;
-        };
+        }
         function post(url,newAdmin) {
             var  defered = $q.defer();
             $http.post(vm.Rest_Service_Url+url,newAdmin).then(function (value) {
                 defered.resolve(value.data)
             },function (reason) {
                 defered.reject(reason.data);
-            })
+            });
             return defered.promise;
-        };
+        }
         function postAdmin(url,adminObj) {
             var  defered = $q.defer();
             $http.post(vm.Rest_Service_Url+url,adminObj).then(function (response) {
                 defered.resolve(response.data)
             },function (reason) {
                 defered.reject(reason.data);
-            })
+            });
             return defered.promise;
         }
     }

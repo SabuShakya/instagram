@@ -9,14 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="css/login.css" rel="stylesheet">
-<%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>--%>
+    <link href="css/bootsrap.min.css" rel="stylesheet">
+    <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>--%>
     <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>--%>
     <script type="text/javascript" src="static/angular.min.js"></script>
     <script type="text/javascript" src="static/angular-route.min.js"></script>
     <script type="text/javascript" src="app-module.js"></script>
-
-
-
 </head>
 <body>
 <h1>Welcome</h1>
@@ -26,13 +24,13 @@
 </div>
 
 </body>
-
+<%--Controllers--%>
 <script type="text/javascript" src="modules/adminsetup/controller/MainController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/LoginController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/SignupController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/AdminpageController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/NewAdminController.js"></script>
-
+<%--Services--%>
 <script type="text/javascript" src="modules/adminsetup/service/LoginService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/SignupService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/HttpService.js"></script>

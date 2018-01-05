@@ -37,6 +37,7 @@ public class AdminServiceImpl implements AdminService{
 
     public List<Admin> getAllAdmins() {
         List<Admin> adminList = adminRepository.findAll();
+        System.out.println(adminList.toString());
         return adminList;
     }
 

@@ -17,14 +17,14 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    @GetMapping("/login/{userId}")
-    public ResponseEntity<Admin> getAdmin(@PathVariable("userId")String userId){
-       Admin isAdmin=adminService.getAdmin(userId);
-        System.out.println(isAdmin);
-        if(isAdmin !=null){
-            return new ResponseEntity(isAdmin,HttpStatus.OK);
-        }
-        return new ResponseEntity<Admin>(isAdmin, HttpStatus.NOT_FOUND);
+    @PostMapping("/login")
+    public ResponseEntity<Boolean> getAdmin(@RequestBody AdminDto adminDto){
+       Admin isAdmin=adminService.getAdmin(adminDto.getUserId());
+       System.out.println(isAdmin);
+       if((isAdmin !=null)&&(isAdmin.getPassword().equals(adminDto.getPassword()))){
+            return new ResponseEntity<Boolean>(true,HttpStatus.OK);
+       }
+        return new ResponseEntity<Boolean>(false, HttpStatus.NOT_FOUND);
     }
 
     @PostMapping("/signup")

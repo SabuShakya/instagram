@@ -7,22 +7,13 @@
         var vm = this;
         vm.verifyAdmin = verifyAdmin;
 
-        function verifyAdmin(url,userId,password) {
-            HttpService.get(url,userId).then(function (response) {
-                console.log("response" + response);
-                if ((response != null) && (response.password == password)) {
-                    $location.path("/viewExistingAdmin");
-                    return true;
-                }else {
-                    vm.valid = false;
-                    vm.errormsg = "Incorrect userId or password";
-                    console.log("error occurred");
-                    return false;
-                }
+        function verifyAdmin(url,adminObj) {
+            HttpService.postAdmin(url,adminObj).then(function (response) {
+                    console.log("response" + response);
+                    $location.path("/adminPage");
+                    return response;
                 }, function (reason) {
-                    vm.errormsg = reason;
-                    console.log("error occurred" + reason);
-                    return false;
+                    return reason;
                 });
         }
     }

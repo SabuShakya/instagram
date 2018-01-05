@@ -8,7 +8,8 @@
 
         return {
             get:get,
-            post:post
+            post:post,
+            postAdmin:postAdmin
         }
         function get(url,userId) {
             var defered = $q.defer();
@@ -28,5 +29,14 @@
             })
             return defered.promise;
         };
+        function postAdmin(url,adminObj) {
+            var  defered = $q.defer();
+            $http.post(vm.Rest_Service_Url+url,adminObj).then(function (response) {
+                defered.resolve(response.data)
+            },function (reason) {
+                defered.reject(reason.data);
+            })
+            return defered.promise;
+        }
     }
 })();

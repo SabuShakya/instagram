@@ -20,10 +20,7 @@ public class AdminServiceImpl implements AdminService{
     public Admin getAdmin(String userId) {
         Admin adminFromrepo= adminRepository.getAdminByUserId(userId);
         System.out.println(adminFromrepo);
-        if (adminFromrepo !=null){
-                return adminFromrepo;
-        }
-        return  null;
+        return adminFromrepo;
     }
 
     public void createAdmin(Admin admin) {

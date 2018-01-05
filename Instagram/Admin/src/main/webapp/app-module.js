@@ -13,9 +13,17 @@
                 controller :'EditController as edit',
                 templateUrl:'/modules/views/editPage.jsp'
             })
-            .when("/viewExistingAdmin",{
-                controller:"ManageAdmin as manage",
+            .when("/adminPage",{
+                controller:"AdminpageController as admin",
                 templateUrl:'/modules/views/adminPage.jsp'
+            })
+            .when("/viewExistingAdmin",{
+                controller:"AdminpageController as manage",
+                templateUrl:'/modules/views/existingUsers.jsp'
+            })
+            .when("/addAdmin",{
+                controller:"NewAdminController as newadmin",
+                templateUrl:'/modules/views/addNewAdmin.jsp'
             })
             .otherwise({
                 redirectTo:'/login'

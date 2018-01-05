@@ -1,5 +1,5 @@
 <h2 class="text-center">Sign Up</h2>
-<form name="myForm" class="form-horizontal" ng-submit="signup.saveAdmin()" novalidate>
+<form name="myForm" class="form-horizontal" novalidate>
     <div class="form-group">
         <label class="control-label col-sm-2" for="name">Name:</label>
         <div class="col-sm-10">

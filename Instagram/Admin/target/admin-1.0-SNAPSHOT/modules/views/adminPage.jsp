@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>DashBoard</h1>
-<button><a href="/addAdmin">Add New Admin</a></button>
-<button><a href="/viewExistingAdmin">Manage Admins</a></button>
+<button><a href="/#!/addAdmin">Add New Admin</a></button>
+<button><a href="/#!/viewExistingAdmin">Manage Admins</a></button>
 </body>
 </html>

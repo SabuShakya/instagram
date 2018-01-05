@@ -5,18 +5,19 @@
 
     function NewAdminService(HttpService,$location) {
         var vm = this;
-        vm.saveAdmin = saveAdmin;
+        vm.saveNewAdmin = saveNewAdmin;
 
-        function saveAdmin(url,newAdmin) {
-            HttpService.post(url,newAdmin).then(function (value) {
-                if(value == true){
-                    $location.path("/adminPage");
-                }else{
-                    return "some error occurred tryAgain";
-                }
-            },function (reason) {
-                console.log("error"+reason);
-            })
+        function saveNewAdmin(url,newAdmin) {
+           return HttpService.post(url,newAdmin);
+        //        .then(function (value) {
+        //         if(value == true){
+        //             $location.path("/adminPage");
+        //         }else{
+        //             return "some error occurred tryAgain";
+        //         }
+        //     },function (reason) {
+        //         console.log("error"+reason);
+        //     })
         }
     }
 })();

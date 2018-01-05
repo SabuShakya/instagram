@@ -30,7 +30,13 @@
 <script type="text/javascript" src="modules/adminsetup/controller/MainController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/LoginController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/SignupController.js"></script>
+<script type="text/javascript" src="modules/adminsetup/controller/AdminpageController.js"></script>
+<script type="text/javascript" src="modules/adminsetup/controller/NewAdminController.js"></script>
+
 <script type="text/javascript" src="modules/adminsetup/service/LoginService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/SignupService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/HttpService.js"></script>
+<script type="text/javascript" src="modules/adminsetup/service/AdminPageService.js"></script>
+<script type="text/javascript" src="modules/adminsetup/service/NewAdminService.js"></script>
+
 </html>

@@ -1,8 +1,8 @@
 (function () {
     angular.module("adminModule").controller("NewAdminController",NewAdminController);
 
-    NewAdminController.$inject = ['NewAdminService'];
-    function NewAdminController(NewAdminService) {
+    NewAdminController.$inject = ['NewAdminService','$location'];
+    function NewAdminController(NewAdminService,$location) {
         var vm = this;
         vm.name = '';
         vm.userId = '';
@@ -10,18 +10,20 @@
         vm.password = '';
         vm.repassword = '';
 
-        vm.saveAdmin = saveAdmin;
+        vm.saveNewAdmin = saveNewAdmin;
         vm.url = "/signup";
-        function saveAdmin() {
+        function saveNewAdmin() {
             vm.newAdminObj={
                 'name':vm.name,
                 'userId':vm.userId,
                 'email':vm.email,
                 'password':vm.password
             };
-            vm.response = NewAdminService.saveAdmin(vm.url,vm.newAdminObj);
+            vm.response = NewAdminService.saveNewAdmin(vm.url,vm.newAdminObj);
             console.log("response"+vm.response);
-            if(!(vm.response==true|| vm.response == false)){
+            if(vm.response){
+                $location.path("/adminPage");
+            }else {
                 vm.show_error_msg = true;
             }
         }

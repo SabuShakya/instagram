@@ -1,5 +1,5 @@
 <h2 class="text-center">Create New </h2>
-<form name="myForm" class="form-horizontal" ng-submit="newadmin.saveAdmin()" novalidate>
+<form name="myForm" class="form-horizontal" novalidate>
     <div class="form-group">
         <label class="control-label col-sm-2" for="name">Name:</label>
         <div class="col-sm-10">
@@ -47,7 +47,7 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button class="btn btn-default" ng-click="newadmin.saveAdmin()">Save</button>
+            <button class="btn btn-default" ng-click="newadmin.saveNewAdmin()">Save</button>
         </div>
     </div>
 </form>

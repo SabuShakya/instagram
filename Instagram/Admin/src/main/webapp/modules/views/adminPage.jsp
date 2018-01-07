@@ -4,8 +4,8 @@
 
 <div ng-hide="admin.showList">
     <h1> All users </h1>
-    <div class="alert alert-success" ng-if="saved">
-        <strong>{{admin.message}}</strong>
+    <div class="alert alert-success" ng-show="saved">
+        <strong>{{message}}</strong>
     </div>
     <table class="table table-striped">
         <thead>
@@ -25,9 +25,9 @@
             <td>{{ad.userId}}</td>
             <td>{{ad.email}}</td>
             <td>
-                <button type="button" ng-click = "admin.editAdmin(ad)" class="btn btn-info"> Edit</button>
+                <button type="button" ng-click = "admin.openEditModal(ad)" class="btn btn-info"> Edit</button>
             </td>
-            <td><button type="button" ng-click = "admin.deleteAdmin(ad)" class="btn btn-danger"> Delete</button></td>
+            <td><button type="button" ng-click = "admin.openDeleteModal(ad)" class="btn btn-danger"> Delete</button></td>
         </tr>
         </tbody>
     </table>

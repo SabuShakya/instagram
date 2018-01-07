@@ -1,5 +1,5 @@
 (function () {
-    angular.module('adminModule',['ngRoute']);
+    angular.module('adminModule',['ngRoute','ngAnimate','ngTouch','ui.bootstrap']);
     angular.module('adminModule').config(['$routeProvider',function ($routeProvider) {
         $routeProvider.when("/login",{
             controller:'LoginController as login',
@@ -8,10 +8,6 @@
             .when("/signup",{
                 controller:'SignupController as signup',
                 templateUrl:'/modules/views/signupPage.jsp'
-            })
-            .when("/edit",{
-                controller :'EditController as edit',
-                templateUrl:'/modules/views/editPage.jsp'
             })
             .when("/adminPage",{
                 controller:"AdminpageController as admin",

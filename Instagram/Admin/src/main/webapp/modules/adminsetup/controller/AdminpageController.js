@@ -1,17 +1,19 @@
 (function () {
     angular.module("adminModule").controller("AdminpageController",AdminpageController);
     
-    AdminpageController.$inject = ['HttpService'];
+    AdminpageController.$inject = ['HttpService','$uibModal','$rootScope'];
     
-    function AdminpageController(HttpService) {
+    function AdminpageController(HttpService,$uibModal,$rootScope) {
         var vm  = this;
         vm.adminList = [];
         vm.showList = true;
         vm.url = "/getAllAdmins";
-
+        $rootScope.clickedAdmin = '';
+        $rootScope.message = '';
+        $rootScope.saved = false;
         vm.showAdminList = showAdminList;
-        vm.editAdmin = editAdmin;
         vm.deleteAdmin = deleteAdmin;
+        vm.openEditModal =  openEditModal;
 
         function showAdminList() {
             HttpService.get(vm.url).then(function (value) {
@@ -21,22 +23,25 @@
                 console.log("Something occurred"+reason);
             });
         }
-        function editAdmin(admin) {
-            vm.url = "/edit"+admin.userId;
-            HttpService.get(vm.url).then(
-                function (value) {
-                    //open uibmodal
-                },function (reason) {
 
-                });
-        }
         function deleteAdmin(admin) {
-
             vm.url = "/delete";
             HttpService.post(url,admin).then(function (value) {
 
             },function (reason) {
 
+            });
+        }
+
+        function openEditModal(admin) {
+            $rootScope.clickedAdmin = admin;
+            vm.modalInstance = $uibModal.open({
+                ariaLabelledBy : 'modal-title',
+                ariaDescribedBy : 'modal-body',
+                templateUrl: '/modules/views/editModal.jsp',
+                controller:'EditModalController',
+                controllerAs:'modalController',
+                size : 'lg'
             });
         }
     }

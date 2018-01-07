@@ -14,6 +14,11 @@
     <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>--%>
     <script type="text/javascript" src="static/angular.min.js"></script>
     <script type="text/javascript" src="static/angular-route.min.js"></script>
+    <%--uiModal--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <%--module--%>
     <script type="text/javascript" src="app-module.js"></script>
 </head>
 <body>
@@ -30,6 +35,7 @@
 <script type="text/javascript" src="modules/adminsetup/controller/SignupController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/AdminpageController.js"></script>
 <script type="text/javascript" src="modules/adminsetup/controller/NewAdminController.js"></script>
+<script type="text/javascript" src="modules/adminsetup/controller/EditModalController.js"></script>
 <%--Services--%>
 <script type="text/javascript" src="modules/adminsetup/service/LoginService.js"></script>
 <script type="text/javascript" src="modules/adminsetup/service/SignupService.js"></script>

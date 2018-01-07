@@ -33,14 +33,7 @@ public class AdminController {
          return new ResponseEntity<Boolean>(true,HttpStatus.OK);
     }
 
-    @GetMapping("/edit/{userId}")
-    public ResponseEntity<Admin> getAdminByUserId(@RequestBody Admin admin,
-                                                  @PathVariable("userId")String userId){
-        Admin ad = adminService.getAdminByUserId(userId);
-        return new ResponseEntity<Admin>(ad,HttpStatus.FOUND);
-    }
-
-    @PostMapping("/edit")
+    @PostMapping("/update")
     public ResponseEntity<Boolean> updateAdmin(@RequestBody Admin admin){
         adminService.updateAdmin(admin);
         return new ResponseEntity<Boolean>(true,HttpStatus.OK);

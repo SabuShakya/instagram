@@ -14,22 +14,13 @@
         vm.showAdminList = showAdminList;
         vm.deleteAdmin = deleteAdmin;
         vm.openEditModal =  openEditModal;
-
+        vm.openDeleteModal =openDeleteModal;
         function showAdminList() {
             HttpService.get(vm.url).then(function (value) {
                 vm.adminList = value;
                 vm.showList = false;
             },function (reason) {
                 console.log("Something occurred"+reason);
-            });
-        }
-
-        function deleteAdmin(admin) {
-            vm.url = "/delete";
-            HttpService.post(url,admin).then(function (value) {
-
-            },function (reason) {
-
             });
         }
 
@@ -43,6 +34,19 @@
                 controllerAs:'modalController',
                 size : 'lg'
             });
+        }
+
+        function openDeleteModal(admin) {
+            $rootScope.clickedAdmin = admin;
+            vm.modalInstance = $uibModal.open({
+                ariaLabelledBy : 'modal-title',
+                ariaDescribedBy : 'modal-body',
+                templateUrl: '/modules/views/confirmDelete.jsp',
+                controller:'EditModalController',
+                controllerAs:'modalController',
+                size : 'lg'
+            });
+
         }
     }
 })();

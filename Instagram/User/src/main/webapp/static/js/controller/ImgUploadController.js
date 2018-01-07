@@ -6,5 +6,6 @@
     function ImgUploadController () {
         var vm= this;
         vm.imageName = [];
+
     }
 })();

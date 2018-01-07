@@ -47,4 +47,8 @@ public class AdminController {
         }
         return new ResponseEntity<List<Admin>>(adminList,HttpStatus.NOT_FOUND);
     }
+    @PostMapping("/delete")
+    public ResponseEntity<Boolean> deleteAdmin(){
+
+    }
 }

@@ -3,7 +3,7 @@
         <h1>Edit</h1>
     </div>
 </div>
-<div class="container">
+
     <div class="modal-body" id="modal-body">
         <form name="myForm" class="form-horizontal" novalidate>
             <div class="form-group">
@@ -40,7 +40,7 @@
         </form>
         <span style="color:red" ng-show="signup.show_error_msg">Error Occurred try again</span>
     </div>
-</div>
+
 <div class="modal-footer">
     <button class="btn btn-default" type="button" ng-click="modalController.update()">Update</button>
     <button class="btn btn-warning" type="button" ng-click="modalController.cancel()">Cancel</button>

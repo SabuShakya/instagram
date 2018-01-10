@@ -18,8 +18,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-touch.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <%--localStorage--%>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
     <%--module--%>
     <script type="text/javascript" src="app-module.js"></script>
+    <%--for photo upload--%>
+    <script type="text/javascript" src="static/angular-base64-upload.js"></script>
+
 </head>
 <body>
 <h1>Welcome</h1>
@@ -27,7 +32,6 @@
 <div>
 <ng-view></ng-view>
 </div>
-
 </body>
 <%--Controllers--%>
 <script type="text/javascript" src="modules/adminsetup/controller/MainController.js"></script>

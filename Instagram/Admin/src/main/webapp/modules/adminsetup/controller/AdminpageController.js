@@ -1,20 +1,40 @@
 (function () {
     angular.module("adminModule").controller("AdminpageController",AdminpageController);
     
-    AdminpageController.$inject = ['HttpService','$uibModal','$rootScope'];
+    AdminpageController.$inject = ['HttpService',
+                                    '$uibModal',
+                                    '$rootScope',
+                                    '$localStorage',
+                                    '$location'];
     
-    function AdminpageController(HttpService,$uibModal,$rootScope) {
+    function AdminpageController(HttpService,$uibModal,$rootScope,$localStorage,$location) {
         var vm  = this;
         vm.adminList = [];
+        vm.adminId = '';
         vm.showList = true;
+        vm.showAll = true;
         vm.url = "/getAllAdmins";
         $rootScope.clickedAdmin = '';
         $rootScope.message = '';
         $rootScope.saved = false;
+
         vm.showAdminList = showAdminList;
-        vm.deleteAdmin = deleteAdmin;
         vm.openEditModal =  openEditModal;
         vm.openDeleteModal =openDeleteModal;
+        vm.openUserLog = openUserLog;
+        vm.logout = logout;
+        vm.openLoginModal = openLoginModal;
+        vm.refreshList =refreshList;
+
+        HttpService.get("/getAdminId/"+$localStorage.tokenNo+"/"+$localStorage.userId).then(
+            function (value) {
+                vm.adminId =  value.name;
+                console.log(vm.adminId);
+            },function (reason) {
+                vm.showAll = false;
+                openLoginModal();
+            });
+
         function showAdminList() {
             HttpService.get(vm.url).then(function (value) {
                 vm.adminList = value;
@@ -22,6 +42,10 @@
             },function (reason) {
                 console.log("Something occurred"+reason);
             });
+        }
+        function refreshList() {
+            showAdminList();
+            $rootScope.saved = false;
         }
 
         function openEditModal(admin) {
@@ -46,7 +70,33 @@
                 controllerAs:'modalController',
                 size : 'lg'
             });
+        }
 
+        function openUserLog() {
+            vm.modalInstance = $uibModal.open({
+                ariaLabelledBy : 'modal-title',
+                ariaDescribedBy : 'modal-body',
+                templateUrl: '/modules/views/userLog.jsp',
+                controller:'EditModalController',
+                controllerAs:'modalController',
+                size : 'lg'
+            });
+        }
+
+        function logout() {
+           $localStorage.adminId = null;
+           $localStorage.tokenNo = null;
+           $location.path("/login");
+        }
+        function openLoginModal() {
+            vm.modalInstance = $uibModal.open({
+                ariaLabelledBy : 'modal-title',
+                ariaDescribedBy : 'modal-body',
+                templateUrl: '/modules/views/sessionLostModal.jsp',
+                controller:'EditModalController',
+                controllerAs:'modalController',
+                size : 'lg'
+            });
         }
     }
 })();

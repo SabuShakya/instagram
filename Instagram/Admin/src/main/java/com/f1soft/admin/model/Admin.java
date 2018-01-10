@@ -30,4 +30,10 @@ public class Admin implements Serializable{
     @NotNull
     @Column(name = "password" ,nullable = false)
     private String password;
+
+    @Column(name = "image")
+    private String image;
+
+    @Column(name = "token_no" ,unique = true)
+    private String tokenNo;
 }

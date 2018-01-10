@@ -8,6 +8,6 @@
     <h3>Confirm Delete {{clickedAdmin.userId}}??</h3>
 </div>
 <div class="modal-footer">
-    <button class="btn btn-warning" type="button" ng-click="modalController.delete()">Update</button>
+    <button class="btn btn-danger" type="button" ng-click="modalController.deleteAdmin()">Delete</button>
     <button class="btn btn-warning" type="button" ng-click="modalController.cancel()">Cancel</button>
 </div>

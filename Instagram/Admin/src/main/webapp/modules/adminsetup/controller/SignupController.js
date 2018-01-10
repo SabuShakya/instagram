@@ -1,8 +1,8 @@
 (function () {
     angular.module("adminModule").controller("SignupController",SignupController);
 
-    SignupController.$inject = ['SignupService','$scope'];
-    function SignupController(SignupService,$scope) {
+    SignupController.$inject = ['SignupService','$location'];
+    function SignupController(SignupService,$location) {
         var vm = this;
         vm.name = '';
         vm.userId = '';
@@ -12,9 +12,7 @@
         vm.response = '';
         vm.match = false;
         vm.show_error_msg = false;
-        if (!(vm.password == vm.repassword)){
-            vm.match = true;
-        }
+
         vm.saveAdmin = saveAdmin;
         vm.url = "/signup";
         function saveAdmin() {
@@ -24,11 +22,11 @@
                 'email':vm.email,
                 'password':vm.password
             };
-            vm.response = SignupService.saveAdmin(vm.url,vm.newAdminObj);
-            console.log("response"+vm.response);
-            if(!(vm.response==true|| vm.response == false)){
+            vm.response = SignupService.saveAdmin(vm.url,vm.newAdminObj).then(function (value) {
+                $location.path("/login");
+            },function (reason) {
                 vm.show_error_msg = true;
-            }
+            });
         }
     }
 })();

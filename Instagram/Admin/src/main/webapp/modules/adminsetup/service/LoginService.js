@@ -8,13 +8,14 @@
         vm.verifyAdmin = verifyAdmin;
 
         function verifyAdmin(url,adminObj) {
-            HttpService.postAdmin(url,adminObj).then(function (response) {
-                    console.log("response" + response);
-                    $location.path("/adminPage");
-                    return response;
-                }, function (reason) {
-                    return reason;
-                });
+            return HttpService.postAdmin(url,adminObj);
+                // .then(function (response) {
+                //     console.log("response" + response);
+                //     // $location.path("/adminPage");
+                //     return response;
+                // }, function (reason) {
+                //     return reason;
+                // });
         }
     }
 

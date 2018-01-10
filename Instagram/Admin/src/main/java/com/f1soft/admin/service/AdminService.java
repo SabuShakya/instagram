@@ -8,7 +8,8 @@ import java.util.List;
 public interface AdminService {
     public Admin getAdmin(String userId);
     public void createAdmin(Admin admin);
-    public Admin getAdminByUserId(String userId);
+    public void saveToken(Admin admin);
+    public Admin getAdminByTokenNo(String token,String userId);
     public void updateAdmin(Admin admin);
     public List<Admin> getAllAdmins();
     public void deleteAdmin(Admin admin);

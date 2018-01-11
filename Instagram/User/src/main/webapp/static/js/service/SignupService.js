@@ -8,15 +8,20 @@ function SignupService( $location, HttpService) {
 
     function createUser(url,newUser) {
         HttpService.post(url, newUser)
-            .then(
-                function (response) {
-                    // $location.path("/login");
-                    console.log("success");
-                },
-                function (reason) {
-                    console.log("error");
-                }
-            )
+            // .then(
+            //     function (response) {
+            //         if(response == true){
+            //             $location.path("/login");
+            //             return "User registered" ;
+            //         }
+            //         else{
+            //             return "Try again";
+            //         }
+            //         },
+            //     function (reason) {
+            //         console.log("error" + reason);
+            //     }
+            // )
     }
 }
 })();

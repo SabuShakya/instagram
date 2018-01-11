@@ -1,7 +1,7 @@
 (function () {
 angular.module('userModule').factory('HttpService', HttpService);
-    HttpService.$inject =['$http', '$q'];
-    function HttpService($http, $q) {
+    HttpService.$inject =['$http', '$q','$rootScope'];
+    function HttpService($http, $q, $rootScope) {
 
         var vm= this;
         vm. REST_SERVICE_URI= "http://localhost:8080";
@@ -9,7 +9,8 @@ angular.module('userModule').factory('HttpService', HttpService);
         return{
             get: get,
             post: post,
-            postLogin:postLogin
+            postLogin:postLogin,
+            postPhotos: postPhotos,
         }
 
         function get(url) {
@@ -42,19 +43,32 @@ angular.module('userModule').factory('HttpService', HttpService);
             return defered.promise;
         }
 
-        function postLogin() {
+        function postLogin(url,user) {
             var defered = $q.defer();
-            $http.post(vm.REST_SERVICE_URI+url)
+            $http.post(vm.REST_SERVICE_URI+url,user)
                 .then(
                     function (response) {
                         defered.resolve(response.data);
                     },
                     function (reason) {
-                        defered.reject(error());
+                        defered.reject(reason);
                     }
                 );
             return defered.promise;
         }
 
+        function postPhotos(url, imageName) {
+            var defered = $q.defer();
+            $http.post(vm.REST_SERVICE_URI +url, imageName)
+                .then(
+                    function (value) {
+                        defered.resolve(value.data);
+                    },
+                    function(error){
+                        defered.reject(error);
+                    }
+                );
+            return defered.promise;
+        }
     }
 })()

@@ -1,10 +1,10 @@
 (function(){
-angular.module('userModule',['ngRoute','naif.base64']);
+angular.module('userModule',['ngRoute','naif.base64','ngTouch','ngAnimate','ui.bootstrap']);
 
 angular.module('userModule').config(function($routeProvider) {
     $routeProvider
         .when("/login",{
-            templateUrl:"static/views/login.jsp",
+            templateUrl:"/static/views/login.jsp",
             controller: "LoginController as login"
         })
         .when("/signup",{
@@ -15,10 +15,11 @@ angular.module('userModule').config(function($routeProvider) {
             templateUrl:"/static/views/main.jsp",
             controller:"MainController as main"
         })
-        .when("/upload",{
-            templateUrl: "/static/views/upload.jsp",
-            controller:"ImgUploadController as img"
+        .when("/profile",{
+            templateUrl: "/static/views/profile.jsp",
+            controller:"ModalUploadController as profile"
         })
+
         .otherwise({
             redirectTo:'/login'
         });

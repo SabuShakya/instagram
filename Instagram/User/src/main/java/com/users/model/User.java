@@ -34,6 +34,13 @@ public class User implements Serializable {
     @Column(name="password", nullable = false)
     private String password;
 
+//    @Column(name = "enabled")
+//    private boolean enabled;
+//
+//    @Column(name ="confirmation_token")
+//    private String confirmationToken;
 
+    @Column(name = "token_no" ,unique = true)
+    private String tokenNo;
 
 }

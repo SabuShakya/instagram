@@ -13,5 +13,5 @@ public class UserPhotodto {
     private String image_path;
     private Date created_date;
     private User id;
-
+    private String caption;
 }

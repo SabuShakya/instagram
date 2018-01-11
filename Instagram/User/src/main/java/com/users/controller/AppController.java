@@ -1,9 +1,12 @@
 package com.users.controller;
 
-
+import com.users.dto.UserPhotodto;
+import com.users.dto.Userdto;
 import com.users.model.User;
 
 //import com.users.service.PhotoService;
+import com.users.model.UserPhotos;
+import com.users.service.PhotoService;
 import com.users.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,16 +17,19 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.FileOutputStream;
+import java.util.Base64;
 import java.util.List;
 
 @RestController
-//@RequestMapping("")
+@RequestMapping("/")
 public class AppController {
     @Autowired
     private UserService userService;
 
-//    @Autowired
-//    private PhotoService photoService;
+    @Autowired
+    private PhotoService photoService;
 
     @GetMapping("/allusers")
     public ResponseEntity<List<User>> listAllUsers() {
@@ -38,31 +44,43 @@ public class AppController {
 
     @PostMapping(value = "/signup", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createUser(@RequestBody User user) {
-
-//        if (userService.userExist(user)){
-//            System.out.println("A User with name " + user.getUname() + " already exist");
-//            return new ResponseEntity<Boolean>(HttpStatus.CONFLICT);
-//        }
-
         userService.saveUser(user);
         return new ResponseEntity<Boolean>(true, HttpStatus.CREATED);
     }
 
-    @GetMapping("/login/{uname}")
-    public ResponseEntity<Boolean> verifyUser(@RequestBody User user, @PathVariable("uname")String uname){
+    @PostMapping("/login")
+    public ResponseEntity<Boolean> getUser(@RequestBody Userdto userdto){
 
-        boolean luser =userService.loginUser(uname, user);
-
-        if(luser){
-            return new ResponseEntity(true,HttpStatus.OK);
+        User isUser = userService.getUser(userdto.getUname());
+        System.out.println(isUser);
+        if((isUser != null)&& (isUser.getPassword().equals(userdto.getPassword()))){
+            return new ResponseEntity<Boolean>(true,HttpStatus.OK);
         }
         return new ResponseEntity<Boolean>(false, HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping("/upload")
-    public ResponseEntity<Boolean> upload(@RequestBody String imageName){
+   @PostMapping("/upload")
+        public ResponseEntity<Boolean> uploads(@RequestBody UserPhotodto userPhotodto){
+        photoService.savePhoto(userPhotodto);
+        return new ResponseEntity<Boolean>(true,HttpStatus.OK);
+   }
 
-        photoService.savePhoto(imageName);
-        return new ResponseEntity<Boolean>(HttpStatus.OK);
+    @GetMapping("/allPhotos")
+    public ResponseEntity<List<UserPhotos>> photoList(){
+        List<UserPhotos> photoList= photoService.getAllPhotos();
+        if(photoList != null){
+            return new ResponseEntity<List<UserPhotos>>(photoList,HttpStatus.OK);
+        }
+        return new ResponseEntity<List<UserPhotos>>(photoList,HttpStatus.NOT_FOUND);
     }
+
+//    @GetMapping("/getUserId/{tokenNo}/{uname}")
+//    public ResponseEntity<User> getUserId(@PathVariable("tokenNo") String tokenNo,
+//                                            @PathVariable("uanme") String uname){
+//        User admin = userService.getUserByTokenNo(tokenNo,uname);
+//        if (admin != null){
+//            return new ResponseEntity<User>(admin,HttpStatus.OK);
+//        }
+//        return new ResponseEntity<User>(admin,HttpStatus.NOT_FOUND);
+//    }
 }

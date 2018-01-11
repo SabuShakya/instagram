@@ -22,11 +22,11 @@ public class UserPhotos {
     @Column(name="created_date", nullable = false)
     private Date created_date;
 
-    @ManyToOne(optional = false)
+    @ManyToOne
     @JoinColumn(name="user_id")
-    private User user;
+    private User id;
 
-    @Lob @Basic(fetch = FetchType.LAZY)
-    @Column(name="content", nullable=false)
-    private byte[] content;
+    @Column(name ="caption")
+    private String caption;
+
 }
